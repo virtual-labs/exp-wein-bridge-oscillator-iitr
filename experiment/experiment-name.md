@@ -1,1 +1,1 @@
-## Experiment name
+## 	Wein bridge oscillator using operational amplifier.
