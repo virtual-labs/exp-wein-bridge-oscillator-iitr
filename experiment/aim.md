@@ -1,1 +1,1 @@
-### Aim of the experiment
+#### To analyse Wein bridge oscillator using operational Amplifier.
