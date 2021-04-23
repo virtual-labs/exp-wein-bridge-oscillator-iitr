@@ -1,0 +1,46 @@
+[{
+	"question": "Wein bridge oscillator is a ____________",
+	"answers": {
+		"a": "Microwave",
+		"b": "RF oscillator",
+		"c": "VHF oscillator",
+		"d": "Audio frequency oscillator"
+	},
+	"correctAnswer": "d"
+}, {
+	"question": "The Wein bridge oscillator requires the external phase shift of",
+	"answers": {
+		"a": "0",
+		"b": "60",
+		"c": "180",
+		"d": "None of the above"
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "An oscillator produces……………. Oscillations",
+	"answers": {
+		"a": "Damped",
+		"b": "Undamped",
+		"c": "Modulated",
+		"d": "None of the above"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "The Wein bridge oscillators uses",
+	"answers": {
+		"a": "Positive feedback only",
+		"b": "Negative feedback only",
+		"c": "Both positive and negative",
+		"d": "Data insufficient"
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "An oscillator employs ……………… feedback",
+	"answers": {
+		"a": "Positive",
+		"b": "Negative",
+		"c": "Neither positive nor negative",
+		"d": "Data insufficient"
+	},
+	"correctAnswer": "a"
+}]
