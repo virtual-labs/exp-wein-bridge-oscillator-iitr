@@ -1,43 +1,42 @@
-## <b> Pre-test
+### Pretest
 #### Please attempt the following questions
 
-Question 1.
-Wein bridge oscillator is a ____________<br>
+Q1. Wein bridge oscillator is a ________.<br>
 
-A   Microwave<br>
-B   RF oscillator<br>
-C   VHF oscillator<br>
-<b>D   Audio frequency oscillator<br></b>
-
-Question 2.
-The Wein bridge oscillator requires the external phase shift of<br>
-A   0<br>
-B   60<br>
-<b>C   180<br></b>
-D   None of the above<br>
-
-Question 3.
-An oscillator produces……………. Oscillations<br>
-A   Damped<br>
-<b>B   Undamped<br></b>
-C   Modulated<br>
-D   None of the above<br>
-
-Question 4.
-The Wein bridge oscillators uses<br>
-A   Positive feedback only<br>
-B   Negative feedback only<br>
-<b>C   Both positive and negative</b><br>
-D   Data insufficient<br>
-
-Question 5.
-An oscillator employs ……………… feedback<br>
-<b>A   Positive<br></b>
-b   Negative<br>
-C   Neither positive nor negative<br>
-D   Data insufficient<br>
+a.  Microwave<br>
+b.  RF oscillator<br>
+c.  VHF oscillator<br>
+d.  Audio frequency oscillator<br>
 
 
+Q2. The Wein bridge oscillator requires the external phase shift of-<br>
+
+a.  0° <br>
+b.  60° <br>
+c.  180° <br>
+d.  None of the above <br>
 
 
+Q3. An oscillator produces_____oscillations.<br>
+
+a.  Damped<br>
+b.  Undamped<br>
+c.  Modulated<br>
+d.  None of the above<br>
+
+
+Q4. The Wein bridge oscillators uses-<br>
+
+a.  Positive feedback only<br>
+b.  Negative feedback only<br>
+c.  Both positive and negative<br>
+d.  Data insufficient<br>
+
+
+Q5. The input current noise in an op-amp circuit noise model is always represented by ___________ source?<br>
+
+a.  Current<br>
+b.  Voltage<br>
+c.  Both a and b<br>
+d.  None of the above<br>
 

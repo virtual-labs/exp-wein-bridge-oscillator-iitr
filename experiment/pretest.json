@@ -1,5 +1,5 @@
 [{
-	"question": "Wein bridge oscillator is a ____________",
+	"question": "Wein bridge oscillator is a ________.",
 	"answers": {
 		"a": "Microwave",
 		"b": "RF oscillator",
@@ -8,16 +8,16 @@
 	},
 	"correctAnswer": "d"
 }, {
-	"question": "The Wein bridge oscillator requires the external phase shift of",
+	"question": "The Wein bridge oscillator requires the external phase shift of-",
 	"answers": {
-		"a": "0",
-		"b": "60",
-		"c": "180",
+		"a": "0°",
+		"b": "60°",
+		"c": "180°",
 		"d": "None of the above"
 	},
 	"correctAnswer": "c"
 }, {
-	"question": "An oscillator produces……………. Oscillations",
+	"question": "An oscillator produces……………oscillations.",
 	"answers": {
 		"a": "Damped",
 		"b": "Undamped",
@@ -26,7 +26,7 @@
 	},
 	"correctAnswer": "b"
 }, {
-	"question": "The Wein bridge oscillators uses",
+	"question": "The Wein bridge oscillators uses-",
 	"answers": {
 		"a": "Positive feedback only",
 		"b": "Negative feedback only",
@@ -35,12 +35,12 @@
 	},
 	"correctAnswer": "c"
 }, {
-	"question": "An oscillator employs ……………… feedback",
+	"question": "The input current noise in an op-amp circuit noise model is always represented by ___________ source?",
 	"answers": {
-		"a": "Positive",
-		"b": "Negative",
-		"c": "Neither positive nor negative",
-		"d": "Data insufficient"
+		"a": "Current",
+		"b": "Voltage",
+		"c": "Both a and b",
+		"d": "None of the above"
 	},
 	"correctAnswer": "a"
 }]
