@@ -1,6 +1,11 @@
-1) Connect the output terminals to the cro.(L1-L2,L3-L4)<br/>
-2) Click on the "check" button to check if the connections are right.<br/>
-3) Once you make sure that the connections are right, you may vary the resistance and calculate the output frequency <br/>
-4) Increase the resistance from 0.3K&ohm; to 300K&ohm;. <br/>
-5) Click on "Add to table" button to add the reading to the table.<br/>
-6) Observe the waveform in the graph.<br/>
+## Procedure
+<b>STEP 1</b>: Connect the components as mentioned:
+(1-3), (2-4).
+<br>
+<br>
+<b>STEP 2</b>: Click on <b>'Check'</b> button to check the connections. If connected connections are wrong, Make the right connection as per given instruction.
+<br><br>
+<b>STEP 3</b>: If connections are right, Click on the<b>'Start'</b> button to perform the experiment.<br><br>
+<b>STEP 4</b>: Toggle On/Off button to control the power to the system.<br><br>
+<b>STEP 5</b>: Move the <b>'Voltage'</b> range slider to fetch values into table.<br><br>
+<b>STEP 6</b>: Click on <b>'Plot'</b> button to plot the graph.<br><br>
