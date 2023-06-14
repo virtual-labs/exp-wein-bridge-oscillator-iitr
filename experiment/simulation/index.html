@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
 	<link rel="stylesheet" href="./src/simstyle.css">
 	<title>Wien bridge oscillator using operational amplifier</title>
@@ -28,16 +29,16 @@
 		
 		<!-- Division for buttons-->
 		
-		<div class="top">
-			<form action="exp.html" method="post" style="width:100%;text-align:right">
+		<div class="top" style="width:100%;text-align:right">
+		
 				<div class="button"><button class="b1 btn btn-danger" type="button" id="check" value="CHECK"
 						style="width: 200px;">Check Connections</button></div>
-				<div class="button"><button type="submit" id="start" style="cursor:not-allowed;width: 100px;"
-						value="START" disabled class="btn btn-secondary">Start</button></div>
+				<div class="button"><button id="start" style="cursor:not-allowed;width: 100px;"
+						value="START" disabled class="btn btn-secondary" onclick="window.location.href = 'exp.html';">Start</button></div>
 				<div class="button"><button class="b2 btn btn-warning" type="button" onclick="location.reload()"
 						value="RESET" style="width: 100px;">Reset</button></input>
 				</div>
-			</form>
+		
 		</div>
 		
 	</div> 
@@ -96,3 +97,4 @@
 	<script src="./src/jsplumb.js"></script>
 	<script src="./src/demo.js"></script>
 </body>	
+</html>
