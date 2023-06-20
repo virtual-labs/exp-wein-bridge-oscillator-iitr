@@ -1,50 +1,43 @@
 <div style="font-family: 'Nunito Sans', sans-serif; font-size: 20px;text-align: justify;">
 <h2>Introduction</h2>
 
-Wein Bridge Oscillator is an electronic device that generates sine waves. In the year 1891, Max Wein developed a bridge circuit to measure the impedances. William R.Hewlett designed the Wein-Bridge Oscillator using the Wein bridge circuit and the differential amplifier. Here the Wein bridge is connected in a positive feedback loop between the amplifier output and differential inputs. This can also be viewed as a band-pass filter that provides positive feedback connected to a positive gain amplifier. The bridge circuit is composed of four resistors and two capacitors. The bridge is balanced at the oscillating frequency and has a very low transfer ratio.
 
-### Circuit Diagram of Wein Bridge Oscillator
+A comparator as its name implies, compares a signal voltage on one input of an op-amp with a known voltage called a reference voltage on the other input. Comparators are used in circuits such as digital interfacing, schmitt trigger, discriminator voltage level detector and oscillators. A comparator circuit is basically an operational amplifier without feedback, that is, the op-amp is used in its open-loop configuration, and when the input voltage, V<sub>in</sub> exceeds a preset reference voltage, V<sub>ref</sub>, the output changes state. Due to the very high open-loop gain of the operational amplifier, using it with positive feedback or even with no feedback at all causes the output to saturate to its supply rail producing one of two distinct output voltages depending on the relative values of its two inputs.<br>
 
-Wein Bridge Oscillator is a two-staged RC coupled amplifier circuit. It has a feedback loop with a series R1C1 circuit, also known as a High-pass Filter circuit, connected to a parallel R2C2 circuit, also known as a Low-pass Filter circuit. This connection forms a selective second-order frequency-dependent Band-pass filter. This filter has a high Q- factor at a selected frequency.<br>
+### Non-Inverting Comparator
 
-The component values of both the RC circuits are the same. At the resonant frequency, the phase shift of the signal will be 0 and the circuit will have good stability and low distortions. Besides RC circuits the other two arms of the Weinbridge consist of two more resistors R3, R4. Below is the circuit diagram of a Wein bridge oscillator using OP-Amp.<br>
+A fixed reference voltage V<sub>ref</sub> of 1 V is applied to the inverting input and time varying signal voltage V<sub>in</sub> is applied to the non-inverting input as shown in figure 1. When V<sub>in</sub> is less than V<sub>ref</sub> the output voltage V<sub>0</sub> = –V<sub>sat</sub>, and when V<sub>in</sub> is greater than V<sub>ref</sub>, then V<sub>0</sub> = +V<sub>sat</sub>.   Thus the V<sub>0</sub> changes from one saturation level to another.<br>
+<center><img src="images/Picture1.jpg" style=" height: 180px" align="center"></center><br>
+<center><b>Fig 1: Non-Inverting Comparator</b></center><br>
+The diodes D<sub>1</sub> and D<sub>2</sub> protect the op-amp from damage due to the excessive input voltage V<sub>in</sub>. Because of these diodes, the difference input voltage V<sub>id</sub> of the op-amp diodes are called clamp diodes. The resistance R in series with V<sub>in</sub> is used to limit the current through D<sub>1</sub> and D<sub>2</sub>. To reduce offset problems, a resistance R<sub>comp</sub> = R is connected between the inverting input and V<sub>ref</sub>. The input and output waveforms are given figure 2.<br><br>
+<b>Input and Output Waveforms</b><br><br>
+<center><img src="images/Picture2.jpg" style=" height: 350px; width:340px" align="center"></center><br>
+<center><b>Fig 2: Input and Output Waveforms of Non-Inverting Comparator</b></center>
 
-<center><img src=images/Wein-bridge1.jpg></center><center>Fig. 1 Wein bridge oscillator using op-amp</center><br>
+### Inverting Comparator
 
-When higher frequencies are applied, the reactance of the capacitors connected in the Wein-bridge is very low. This short circuits the resistor R2 and its output voltage will be zero. At lower frequencies, the higher reactance of the capacitors is observed, and capacitor C1 acts as an open circuit thereby causing the output voltage to be zero. This feature of Wein-bridge observed at the application of lower and higher frequencies, makes it a lead-lag circuit. Here Op-Amp is used as the non-inverting amplifier. The output voltage from the Wein-bridge is fed back to both inverting and non-inverting terminals of the Op-amp.<br>
+An inverting comparator in which the reference voltage V<sub>ref</sub> is applied to the non-inverting input and V<sub>in</sub> is applied to the inverting input as shown in figure 3. In this circuit V<sub>ref</sub> is obtained by using a10K potentiometer that forms a voltage divider with DC supply of +V<sub>cc</sub> and the wiper connected to the input. As the wiper is moved towards +V<sub>cc</sub>, V<sub>ref</sub> becomes more positive. Thus a V<sub>ref</sub> of a desired amplitude and polarity can be obtained by simply adjusting the 10K potentiometer.<br>
+<center><img src="images/Picture3.jpg" style=" height: 180px" align="center"></center><br>
+<center><b>Fig 3: Inverting Comparator</b></center><br>
+The input and output waveforms of an inverting comparator are shown in figure 4.<br><br>
+<b>Input and Output Waveforms</b><br><br>
+<center><img src="images/Picture4.jpg" style=" height: 350px; width:340px" align="center"></center><br>
+<center><b>Fig 4: Input and Output Waveforms of Inverting Comparator</b></center><br>
 
-### Operation of Wein Bridge Oscillator using IC741
+### Applications of Comparators
 
-In a Wein bridge oscillator, when lower to higher frequencies are applied, at a particular frequency, the value of resistance and capacitor reactance becomes equal to each other. At this point, the maximum output voltage is observed. This frequency where maximum voltage is derived is known as the “Resonance Frequency” of the Wein bridge oscillator and is denoted as fr.<br>
-The formula for the calculation of resonant frequency is as follows
+#### 1) Null detectors
 
-<center><b>f<sub>r</sub> = 1/(2πRC)</b></center><br>
+A null detector identifies when a given value is zero. Comparators are ideal for null detection comparison measurements, since they are equivalent to a very high gain amplifier with well-balanced inputs and controlled output limits. The null detector circuit compares two input voltages: an unknown voltage and a reference voltage, usually referred to as v<sub>u</sub> and v<sub>r</sub>.
 
-At the resonant frequency, the phase shift between input and output will be zero. The magnitude of the output voltage will be one-third of the input voltage.<br>
+#### 2) Zero-crossing detectors
 
-The output of the op-amp is given as input to the bridge circuit from points a and c. The output from the bridge is derived from points b and d and given as input to the op-amp. A portion of the amplifier output is feedback to the positive or non-inverting terminal of the op-amp through the voltage divider circuit, formed by the series combination of resistor and capacitor. Another portion of the output is feedback to the negative or inverting terminal of the op-amp, through the impedance of 2R magnitude.<br>
+For this type of detector, a comparator detects each time an ac pulse changes polarity. The output of the comparator changes state each time the pulse changes its polarity, that is the output is HI (high) for a positive pulse and LO (low) for a negative pulse squares the input signal.
 
-Here, the feedback network provides zero phase shift. Since the amplifier is non-inverting it also has zero phase shift. Hence, the combination of feedback bridge and non-inverting amplifier produces zero phase shift around the loop. Thus, the required condition for the generation of oscillations is achieved. The circuit of the Wein bridge oscillator using IC741 is given below.<br>
+#### 3) Relaxation oscillator
 
-<center><img src=images/Wein-bridge2.png width="300" height="240"></center><center>Fig. 2 Wein bridge oscillator using IC741</center>
+A comparator can be used to build a relaxation oscillator. It uses both positive and negative feedback. The positive feedback is a Schmitt trigger configuration. Alone, the trigger is a bistable multivibrator. However, the slow negative feedback added to the trigger by the RC circuit causes the circuit to oscillate automatically. That is, the addition of the RC circuit turns the hysteretic bistable multivibrator into an astable multivibrator.
 
-### Advantages of Wein bridge oscillator
+#### 4) Window detectors
 
-1. The overall gain of the oscillator is high as it uses a two-stage amplifier.
-2. As no inductors are used in the circuit, there is no issue of interference from external magnetic fields.
-3. This oscillator produces a stable sinewave without any distortions.
-4. The frequency of the oscillations can be changed by changing the values of capacitors or by the use of a variable resistor in the circuit.
-5. The Wein-bridge oscillator has good frequency stability.
-
-### Disadvantages of Wein bridge oscillator
-
-1. The two-stage amplifier type of oscillator requires more devices for construction.
-2. This oscillator cannot generate very high frequencies, because of the limitations placed on the amplitude and phase-shift values of the amplifier.
-
-### Applications:
-
-1. These are highly used for audio testing.
-2. Clock signals for testing filter circuits can be generated by this oscillator.
-3. Used in distortion testing of power amplifiers.
-4. These are also used as excitation for the AC bridges.
-
+Comparators can also be used as window detectors. In a window detector, a comparator is used to compare two voltages and determine whether a given input voltage is under voltage or over voltage.
