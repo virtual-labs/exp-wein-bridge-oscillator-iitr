@@ -90,9 +90,10 @@
 }
 .fith{
     position: absolute;
-    left:0.7em;
-    font-size: 15;
+    left: 0.6em;
+    font-size: 20;
     font-weight: 600;
+    top: 63px;
 }
 .yaxis{
     position:absolute;
