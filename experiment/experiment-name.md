@@ -1,1 +1,1 @@
-## Voltage Comparator.
+## Wien bridge oscillator using operational amplifier.
