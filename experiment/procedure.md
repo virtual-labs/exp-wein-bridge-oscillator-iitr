@@ -1,6 +1,6 @@
 ## Procedure
 <b>STEP 1</b>: Connect the components as mentioned:
-(1-3), (2-4), (5-7), (6-8).
+(1-3), (2-4).
 <br>
 <br>
 <b>STEP 2</b>: Click on <b>'Check'</b> button to check the connections. If connected connections are wrong, Make the right connection as per given instruction.

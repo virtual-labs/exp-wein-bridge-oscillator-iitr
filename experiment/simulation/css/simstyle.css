@@ -3,57 +3,44 @@
     top: 0em;
     border: 5px;
     left: 0%;
-    height: 48em;
+    height: 47em;
     width: 89em;
     border-style: groove;
     background-color: white;
     /* width: 1422px; */
 }
-input {
-    background: #228b22;
+.input {
+    background: #044ca3;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 3px;
+}
+.input1 {
+    background: grey;
     color: white;
     padding: 10px 10px;
     border: none;
     border-radius: 3px;
 }
 	#dragDropWindow1{
-		left: 21.8em;
-		top: 27.6em;
-		position: fixed;
-	}
-	#dragDropWindow6{
-		left: 19.3em;
-		top: 27.6em;
-		position: fixed;
-	}
-	#dragDropWindow8{
-		left: 63.4em;
-		top: 25.3em;
-		position: fixed;
-	}
-	#dragDropWindow7{
-		left: 74.55em;
-		top: 23.1em;
-		position: fixed;
-	}
-	#dragDropWindow5{
-		left: 31.4em;
-		top: 22.5em;
+		left: 48.27em;
+		top: 16.1em;
 		position: fixed;
 	}
 	#dragDropWindow2{
-		left: 31.2em;
-		top: 18.1em;
+		left: 61.8em;
+		top: 17.3em;
+		position: fixed;
+	}
+	#dragDropWindow3{
+		left: 48em;
+		top: 23em;
 		position: fixed;
 	}
 	#dragDropWindow4{
-		left: 70.8em;
-		top: 23.1em;
-		position: absolute;
-	}
-	#dragDropWindow3{
-		left: 63.5em;
-		top: 18em;
+		left: 62.8em;
+		top: 17.3em;
 		position: fixed;
 	}
 	.image{
@@ -62,8 +49,8 @@ input {
 	}
 	.top{
 		position:absolute;
-		bottom:50px;
-		right:30px;
+		bottom:5%;
+		right:3%;
 		/*z-index:10;*/
 	}
 	.instruct{

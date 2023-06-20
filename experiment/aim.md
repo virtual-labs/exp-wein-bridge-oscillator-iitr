@@ -1,1 +1,1 @@
-#### To study the voltage comparator.
+#### To analyse Wein bridge oscillator using operational Amplifier.

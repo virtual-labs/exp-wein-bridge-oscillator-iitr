@@ -6,7 +6,7 @@
     yy.onclick=checkk;
     function checkk()
     {
-       if(connections.length<4)
+       if(connections.length<2)
        {alert("Wrong Connections\nPlease go through the instructions once")
        return false}
         
@@ -16,24 +16,24 @@
                 listDiv.push(connections[j].sourceId)
                 listDiv.push(connections[j].targetId)       
             }
-            var f=0
+            var f=1
 			var num=[]
-			for(i=0;i<8;i++){
-			 num[i]=parseInt(listDiv[i].substring(14));
-				//alert(num[i]);
+			for(i=0;i<4;i++){
+			 num[i]=Number(listDiv[i].substring(14))
+				//alert(num[i])
 			}
-         for(var i=0;i<8;i+=2)
+         for(var i=0;i<4;i+=2)
          {
 			 if((num[i]+1==num[i+1])||(num[i]-1==num[i+1])) continue
-			 else {f=1;break;}
+			 else {f=0;break;}
          }
          
-         if(f!=0) {
+         if(f==0) {
          alert("Wrong Connections\nPlease go through the instructions once");
 		 return false;
 		 }
         }
-		if (f==0) {
+		if (f==1) {
 			alert("Right connections.\nYou can start your experiment.");
 			document.getElementById("check").remove();
 			document.getElementById("start").disabled=false;
@@ -108,59 +108,56 @@
             };
 
             var exampleEndpoint2 = {
-                endpoint: ["Dot", { radius: 8 }],
-                paintStyle: { fill: "black" },
+                endpoint: ["Dot", { radius: 10 }],
+                paintStyle: { fill: "red" },
                 isSource: true,
                 scope: "green",
-                connectorStyle: { stroke: "black", strokeWidth: 6 },
-                connector: ["Bezier", { curviness: -30 }],
+                connectorStyle: { stroke: "red", strokeWidth: 5 },
+                connector: ["Bezier", { curviness: -10 } ],
+                maxConnections:1 ,
+                isTarget: true,
+                dropOptions: exampleDropOptions
+            };
+			var exampleEndpoint21 = {
+                endpoint: ["Dot", { radius: 5 }],
+                paintStyle: { fill: "red" },
+                isSource: true,
+                scope: "green",
+                connectorStyle: { stroke: "red", strokeWidth: 5 },
+                connector: ["Bezier", { curviness: -10 } ],
                 maxConnections:1 ,
                 isTarget: true,
                 dropOptions: exampleDropOptions
             };
 			var exampleEndpoint3 = {
-                endpoint: ["Dot", { radius: 8 }],
+                endpoint: ["Dot", { radius: 10 }],
                 paintStyle: { fill: "black" },
                 isSource: true,
                 scope: "green",
-                connectorStyle: { stroke: "black", strokeWidth: 6 },
-                connector: ["Bezier", { curviness: -50 } ],
+                connectorStyle: { stroke: "black", strokeWidth: 5 },
+                connector: ["Bezier", { curviness: 10 } ],
                 maxConnections:1 ,
                 isTarget: true,
                 dropOptions: exampleDropOptions
             };
-			var exampleEndpoint4 = {
-                endpoint: ["Dot", { radius: 8 }],
-                paintStyle: { fill: "red" },
+			var exampleEndpoint31 = {
+                endpoint: ["Dot", { radius: 5 }],
+                paintStyle: { fill: "black" },
                 isSource: true,
                 scope: "green",
-                connectorStyle: { stroke: "red", strokeWidth: 6 },
-                connector: ["Bezier", { curviness: -30 }],
+                connectorStyle: { stroke: "black", strokeWidth: 5 },
+                connector: ["Bezier", { curviness: 10 } ],
                 maxConnections:1 ,
                 isTarget: true,
                 dropOptions: exampleDropOptions
             };
-            var exampleEndpoint5 = {
-                endpoint: ["Dot", { radius: 8 }],
-                paintStyle: { fill: "red" },
-                isSource: true,
-                scope: "green",
-                connectorStyle: { stroke: "red", strokeWidth: 6 },
-                connector: ["Bezier", { curviness: -50 } ],
-                maxConnections:1 ,
-                isTarget: true,
-                dropOptions: exampleDropOptions
-            };
-			instance.addEndpoint("dragDropWindow1", { anchor: [0.75, 0, 0, -1] }, exampleEndpoint4);
-            instance.addEndpoint("dragDropWindow2", { anchor: [0.75, 0, 0, -1] }, exampleEndpoint4);
-            instance.addEndpoint("dragDropWindow3", { anchor: [0.75,0 , 0, -1] }, exampleEndpoint5);
-            instance.addEndpoint("dragDropWindow4", { anchor: [0.75, 0, 0, -1] }, exampleEndpoint5);
-            instance.addEndpoint("dragDropWindow5", { anchor: [0.75, 0, 0, -1] }, exampleEndpoint3);
-            instance.addEndpoint("dragDropWindow6", { anchor: [0.75, 0, 0, -1] }, exampleEndpoint3);
-			instance.addEndpoint("dragDropWindow7", { anchor: [0.75, 0, 0, -1] }, exampleEndpoint2);
-			instance.addEndpoint("dragDropWindow8", { anchor: [0.75, 0, 0, -1] }, exampleEndpoint2);
+            
+			instance.addEndpoint("dragDropWindow1", { anchor: [0.75, 0, 0, -1] }, exampleEndpoint2);
+            instance.addEndpoint("dragDropWindow2", { anchor: [0.75, 0, 0, -1] }, exampleEndpoint21);
+            instance.addEndpoint("dragDropWindow3", { anchor: [0.75,0 , 0, -1] }, exampleEndpoint3);
+            instance.addEndpoint("dragDropWindow4", { anchor: [0.75, 0, 0, -1] }, exampleEndpoint31);
+            
 			
-
             instance.draggable(jsPlumb.getSelector(".drag-drop-demo .window"));
 
             var hideLinks = jsPlumb.getSelector(".drag-drop-demo .hide");
@@ -198,5 +195,4 @@
 })
 
 ()
-
 ;
