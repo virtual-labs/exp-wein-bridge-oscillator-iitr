@@ -1,1 +1,1 @@
-## 	Wein bridge oscillator using operational amplifier.
+## Voltage Comparator.
