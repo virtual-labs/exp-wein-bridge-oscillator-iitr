@@ -162,6 +162,19 @@
 				}
 			}
 			function updateAll() {
+
+let toggle =1;
+
+if(toggle === 1)   {
+
+	document.getElementById('stop').disabled = 0;
+
+}
+
+else {
+	document.getElementById('stop').disabled =1;
+}
+
 				f = f + temp;
 				temp = f - temp;
 				f = f - temp;
@@ -186,7 +199,8 @@
 			}
 			function stop() {
 				alert("You cannot read more values");
-				//document.getElementById("stop").disabled="true";
+				// document.getElementById('btn12').disabled = true;
+				document.getElementById("stop").disabled="true";
 			}
 
 			function updateTextBox(val) {
@@ -195,7 +209,12 @@
 					document.getElementById("x").value = val + "mV";
 					document.getElementById("y").value = "";
 				}
-				else alert("Please turn on the power ");
+
+				else if(f==0) {
+
+					document.getElementById('stop').disabled = true;
+
+				}
 			}
 
 		</script>
@@ -244,7 +263,7 @@
 			<br>
 			<tr style="position: absolute;top: 24%;right: 8.5%;">
 				<th><b>Voltage (in V)</b></th>
-				<td><input type="range" min="100" max="20000" step="0.1" onchange="insert()"
+				<td><input type="range" min="100" max="20000" step="0.1" disabled="1"  onchange="insert()"
 						oninput="updateTextBox(this.value)" id="stop" value="0"></td>
 
 			</tr>
@@ -305,7 +324,7 @@
 				unit=2V</p>
 		</div>
 		<div class="graph">
-			<button class="btn btn-danger" onclick="plot()" style="  position: absolute;
+			<button class="btn btn-danger" id="btn12" onclick="plot()" style="  position: absolute;
 			top: -37px;width: 100px;">Plot</button>
 			<div style="position:absolute;bottom:99.6%;left:28.5%;"><button class="btn btn-danger" id="button1"
 					onclick="printf()" style="width: 100px;">Print</button><br /></div>

@@ -6,9 +6,20 @@
     yy.onclick=checkk;
     function checkk()
     {
+
+        if(connections.length==0)  {
+            alert("Please make the connections first");
+            return false;
+
+        }
+
        if(connections.length<2)
-       {alert("Wrong Connections\nPlease go through the instructions once")
-       return false}
+
+       {
+        alert("Wrong Connections\nPlease go through the instructions once")
+        
+       return false
+    }
         
         if (connections.length > 0) {
             var listDiv = []
