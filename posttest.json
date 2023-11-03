@@ -1,0 +1,55 @@
+{
+	"version": 2.0,
+	"questions": [
+		{
+			"question": "Which amplifier is used in Wein bridge oscillator?",
+			"answers": {
+				"a": "Opamp with positive feedback",
+				"b": "Opamp with negative feedback",
+				"c": "Opamp with both positive and negative feedback",
+				"d": "None of the above"
+			},
+			"correctAnswer": "c"
+		},
+		{
+			"question": "What is the frequency of oscillation of Wein bridge oscillator?",
+			"answers": {
+				"a": "f = 1/2πRC",
+				"b": "f = 1/4πRC",
+				"c": "f = 1/8πRC",
+				"d": "f = 1/πRC"
+			},
+			"correctAnswer": "a"
+		},
+		{
+			"question": "In a Wien-bridge oscillator, if the resistances in the positive feedback circuit are decreased, the frequency____.",
+			"answers": {
+				"a": "Remains the same",
+				"b": "Decreases",
+				"c": "Increases",
+				"d": "Insufficient data"
+			},
+			"correctAnswer": "c"
+		},
+		{
+			"question": "The signal generator generally used in the laboratories is____oscillator.",
+			"answers": {
+				"a": "Wien-bridge",
+				"b": "Hartely",
+				"c": "Crystal",
+				"d": "Phase shift"
+			},
+			"correctAnswer": "a"
+		},
+		{
+			"question": "The Wein bridge oscillator is generally used for?",
+			"answers": {
+				"a": "Square wave generation",
+				"b": "Narrow range of sine wave generation",
+				"c": "Wide range of sine wave generation",
+				"d": "None of the above"
+			},
+			"correctAnswer": "b"
+		}
+	]
+}

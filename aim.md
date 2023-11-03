@@ -1,0 +1,1 @@
+#### To analyse Wein bridge oscillator using operational Amplifier.
