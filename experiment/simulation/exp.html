@@ -199,7 +199,8 @@ else {
 			}
 			function stop() {
 				alert("You cannot read more values");
-				//document.getElementById("stop").disabled="true";
+				// document.getElementById('btn12').disabled = true;
+				document.getElementById("stop").disabled="true";
 			}
 
 			function updateTextBox(val) {
@@ -323,7 +324,7 @@ else {
 				unit=2V</p>
 		</div>
 		<div class="graph">
-			<button class="btn btn-danger" onclick="plot()" style="  position: absolute;
+			<button class="btn btn-danger" id="btn12" onclick="plot()" style="  position: absolute;
 			top: -37px;width: 100px;">Plot</button>
 			<div style="position:absolute;bottom:99.6%;left:28.5%;"><button class="btn btn-danger" id="button1"
 					onclick="printf()" style="width: 100px;">Print</button><br /></div>
